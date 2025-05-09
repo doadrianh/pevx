@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.2 (2025-05-09)
+
+### Bug Fixes
+
+- Refer version from pyproject.toml
+  ([`28b68ec`](https://github.com/doadrianh/pevx/commit/28b68ec88e6770049694103a29b5908cdbd01093))
+
+
 ## v0.1.1 (2025-05-09)
 
 ### Bug Fixes
