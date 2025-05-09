@@ -45,7 +45,8 @@ def test_auth_poetry_command(mock_run, runner):
         (['poetry', 'source', 'remove', 'codeartifact'],),
         # Poetry source add call
         (['poetry', 'source', 'add', 'codeartifact', 
-          'https://prudentia-sciences-728222516696.d.codeartifact.us-east-1.amazonaws.com/pypi/pypi-store/simple/'],),
+          'https://prudentia-sciences-728222516696.d.codeartifact.us-east-1.amazonaws.com/pypi/pypi-store/simple/',
+          '--priority', 'supplemental'],),
         # Poetry config call
         (['poetry', 'config', 'http-basic.codeartifact', 'aws', 'fake-token'],)
     ]
