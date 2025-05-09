@@ -1,6 +1,20 @@
 # CHANGELOG
 
 
+## v0.1.1 (2025-05-09)
+
+### Bug Fixes
+
+- Add priority param to auth-poetry cmd
+  ([`9ab637f`](https://github.com/doadrianh/pevx/commit/9ab637f486862d65f3d94b1d682fd5bc8037b215))
+
+- Resolve unit tests
+  ([`0ace640`](https://github.com/doadrianh/pevx/commit/0ace64085e40d0dcbc8115cdfa641c5f83b607e6))
+
+- Set priority to supplemental as default
+  ([`4377ee8`](https://github.com/doadrianh/pevx/commit/4377ee8e9805df3cb7b147da1079d33df061b520))
+
+
 ## v0.1.0 (2025-05-09)
 
 ### Features
