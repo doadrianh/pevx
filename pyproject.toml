@@ -1,6 +1,6 @@
 [project]
 name = "pevx"
-version = "0.1.2"
+version = "0.1.3"
 description = "Prudentia CLI - Development tools for Prudentia internal developers"
 readme = "README.md"
 authors = [

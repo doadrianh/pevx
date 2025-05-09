@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.3 (2025-05-09)
+
+### Bug Fixes
+
+- Update pyproject.toml to get the latest version from semantic-release
+  ([`6477879`](https://github.com/doadrianh/pevx/commit/647787928625a70cb63bc5f95a0c7f899a7e60d6))
+
+
 ## v0.1.2 (2025-05-09)
 
 ### Bug Fixes
