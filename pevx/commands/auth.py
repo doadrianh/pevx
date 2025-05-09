@@ -46,7 +46,7 @@ def auth_poetry(domain, domain_owner, repo, region):
                       stderr=subprocess.DEVNULL, check=False)
         
         # Add source
-        subprocess.run(['poetry', 'source', 'add', 'codeartifact', repo_url], check=True)
+        subprocess.run(['poetry', 'source', 'add', 'codeartifact', repo_url, '--priority', 'supplemental'], check=True)
         
         # Configure basic auth
         subprocess.run(['poetry', 'config', f'http-basic.codeartifact', 'aws', token], check=True)
