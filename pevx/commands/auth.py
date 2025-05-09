@@ -8,7 +8,8 @@ import subprocess
 @click.option('--domain-owner', '-o', default='728222516696', help='CodeArtifact domain owner')
 @click.option('--repo', '-r', default='pypi-store', help='CodeArtifact repository name')
 @click.option('--region', '-reg', default='us-east-1', help='AWS region')
-def auth_poetry(domain, domain_owner, repo, region):
+@click.option('--priority', '-p', default='supplemental', help='Priority for the source')
+def auth_poetry(domain, domain_owner, repo, region, priority):
     """Authenticate poetry with AWS CodeArtifact."""
     click.echo("Authenticating poetry with AWS CodeArtifact...")
     
@@ -46,10 +47,10 @@ def auth_poetry(domain, domain_owner, repo, region):
                       stderr=subprocess.DEVNULL, check=False)
         
         # Add source
-        subprocess.run(['poetry', 'source', 'add', 'codeartifact', repo_url, '--priority', 'supplemental'], check=True)
+        subprocess.run(['poetry', 'source', 'add', 'codeartifact', repo_url, '--priority', priority], check=True)
         
         # Configure basic auth
-        subprocess.run(['poetry', 'config', f'http-basic.codeartifact', 'aws', token], check=True)
+        subprocess.run(['poetry', 'config', 'http-basic.codeartifact', 'aws', token], check=True)
         
         click.echo("Successfully authenticated poetry with AWS CodeArtifact!")
         return 0
