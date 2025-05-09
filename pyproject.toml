@@ -1,10 +1,24 @@
-[tool.poetry]
+[project]
 name = "pevx"
-version = "0.1.0"
+version = "0.1.2"
 description = "Prudentia CLI - Development tools for Prudentia internal developers"
-authors = ["Prudentia Sciences"]
 readme = "README.md"
-packages = [{include = "pevx"}]
+authors = [
+    {name = "Adrianh Dao", email = "doadrianh@gmail.com"}
+]
+license = {text = "Proprietary"}
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Private :: Do Not Upload",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
 
 [tool.poetry.scripts]
 pevx = "pevx.cli:cli"
