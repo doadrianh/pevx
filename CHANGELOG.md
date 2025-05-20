@@ -1,6 +1,22 @@
 # CHANGELOG
 
 
+## v0.1.4 (2025-05-20)
+
+### Bug Fixes
+
+- Add awscli as default dep
+  ([`4ea51e7`](https://github.com/doadrianh/pevx/commit/4ea51e778b7446ca58651123818b55e08698df44))
+
+### Chores
+
+- Remove invalid classifier
+  ([`4329c3c`](https://github.com/doadrianh/pevx/commit/4329c3cf0153c8c049699d92a288428745ef86d7))
+
+- Remove setup.py
+  ([`8d98257`](https://github.com/doadrianh/pevx/commit/8d9825728801160892bd9c69b5735daa44ea2af5))
+
+
 ## v0.1.3 (2025-05-09)
 
 ### Bug Fixes
